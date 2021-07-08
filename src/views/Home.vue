@@ -15,12 +15,15 @@
         <br /><br />
         <div class="buttons">
           <a-button
+            @click="googleLogin"
             type="danger"
             shape="circle"
             icon="google"
             style="margin-right: 0.4rem"
           />
-          <a-button type="primary" icon="block"> Login </a-button>
+          <a-button type="primary" icon="block" @click="emailLogin">
+            Login
+          </a-button>
         </div>
       </div>
     </div>
@@ -28,12 +31,60 @@
 </template>
 
 <script>
+import FirebaseApp from "../firebaseConfig";
 export default {
   data() {
     return {
       email: null,
       password: null,
     };
+  },
+  methods: {
+    emailLogin() {
+      FirebaseApp.auth
+        .createUserWithEmailAndPassword(this.email, this.password)
+        .then((data) => this.saveUser(data.user))
+        .catch((err) => {
+          console.log(err);
+          if (err.code === "auth/email-already-in-use") {
+            FirebaseApp.auth
+              .signInWithEmailAndPassword(this.email, this.password)
+              .then((data) => this.saveUser(data.user))
+              .catch((err) =>
+                this.$notification.error({
+                  message: "Authentication Error",
+                  description: err.message,
+                })
+              );
+          } else
+            this.$notification.error({
+              message: "Authentication Error",
+              description: err.message,
+            });
+        });
+    },
+    googleLogin() {
+      var provider = new FirebaseApp.googProvide.GoogleAuthProvider();
+      FirebaseApp.auth
+        .signInWithPopup(provider)
+        .then((data) => this.saveUser(data.user))
+        .catch((err) =>
+          this.$notification.error({
+            message: "Authentication Error",
+            description: err.message,
+          })
+        );
+    },
+    saveUser(user) {
+      let appUser = {
+        email: user.email,
+        displayName: user.displayName ?? user.email,
+        photoURL: user.photoURL,
+      };
+      localStorage.setItem("logged", true);
+      this.$store.commit("SET_USER", appUser);
+      this.$router.push("/about");
+    },
   },
 };
 </script>
