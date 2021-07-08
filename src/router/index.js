@@ -17,6 +17,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/qPage/:state",
+    name: "q-page",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/qPage.vue"),
+  },
 ];
 
 const router = new VueRouter({

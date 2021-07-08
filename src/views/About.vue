@@ -45,12 +45,7 @@
               Molestias, nesciunt.
             </li>
           </ul>
-          <a-button
-            :loading="!start"
-            type="primary"
-            icon="fire"
-            @click="$router.push('ques')"
-          >
+          <a-button :loading="!start" type="primary" icon="fire" @click="move">
             Start
           </a-button>
         </div>
@@ -89,6 +84,9 @@ export default {
       .doc("admin")
       .onSnapshot((data) => {
         this.start = data.data().start;
+        if (data.data().start && localStorage.getItem("qNum")) {
+          this.$router.push(`qPage/${localStorage.getItem("qNum")}`);
+        }
       });
   },
   methods: {
@@ -101,6 +99,10 @@ export default {
       } else {
         return this.user.displayName[0].toUpperCase();
       }
+    },
+    move() {
+      localStorage.setItem("qNum", 1.1);
+      this.$router.push("qPage/1.1");
     },
   },
 };
