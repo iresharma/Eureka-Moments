@@ -16,3 +16,18 @@ footer {
   font-weight: 600;
 }
 </style>
+
+<script>
+export default {
+  beforeMount() {
+    let user = localStorage.getItem("user");
+    this.$store.commit("SET_USER", JSON.parse(user));
+    this.$store.state.question = Number(
+      localStorage.getItem("qNum").split(".")[0]
+    );
+    this.$store.state.state = Number(
+      localStorage.getItem("qNum").split(".")[1]
+    );
+  },
+};
+</script>

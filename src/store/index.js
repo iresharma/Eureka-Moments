@@ -9,10 +9,32 @@ export default new Vuex.Store({
       displayName: null,
       email: null,
       photoURL: null,
+      score: 0,
     },
+    question: 1,
+    state: 1,
   },
   mutations: {
-    SET_USER: (state, payload) => (state.user = payload),
+    SET_USER: (state, payload) => {
+      state.user = payload;
+      localStorage.setItem("user", JSON.stringify(payload));
+    },
+    INCREMENT_STATE: (state) => {
+      state.state++;
+      localStorage.setItem("qNum", `${state.question}.${state.state}`);
+    },
+    DECREMENT_STATE: (state) => {
+      state.state--;
+      localStorage.setItem("qNum", `${state.question}.${state.state}`);
+    },
+    INCREMENT_QUES: (state) => {
+      state.question++;
+      localStorage.setItem("qNum", `${state.question}.${state.state}`);
+    },
+    INCREMENT_SCORE: (state) => {
+      state.user.score++;
+      localStorage.setItem("user", JSON.stringify(state.user));
+    },
   },
   actions: {},
   modules: {},

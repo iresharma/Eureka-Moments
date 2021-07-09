@@ -19,32 +19,50 @@
         </a-avatar>
       </template>
     </a-page-header>
+    <div class="content">
+      <transition name="fade" mode="out-in">
+        <component :is="slide" />
+      </transition>
+    </div>
   </div>
 </template>
 
 <script>
+import slide1_1 from "./Slides/slide1-1.vue";
+import slide1_2 from "./Slides/slide1-2.vue";
+import slide1_3 from "./Slides/slide1-3.vue";
 export default {
+  components: {
+    slide1_1,
+    slide1_2,
+    slide1_3,
+  },
   computed: {
     user() {
       return this.$store.state.user;
     },
     title() {
-      let q = Number(this.$route.params.state.split(".")[0]);
+      let q = Number(this.$store.state.question);
       console.log(q);
-      return this.quesJSON[q].title;
+      return this.quesJSON[q - 1].title;
     },
     subtitle() {
-      let q = Number(this.$route.params.state.split(".")[0]);
-      return this.quesJSON[q].subtitle;
+      let q = Number(this.$store.state.question);
+      return this.quesJSON[q - 1].subtitle;
+    },
+    slide() {
+      let q = Number(this.$store.state.question);
+      let s = Number(this.$store.state.state);
+      return this.quesJSON[q - 1].slides[s - 1];
     },
   },
   data() {
     return {
       quesJSON: [
-        {},
         {
           title: "General Riddles",
           subtitle: "To get the mind motors running",
+          slides: [slide1_1, slide1_2, slide1_3],
         },
       ],
     };
@@ -66,3 +84,21 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>

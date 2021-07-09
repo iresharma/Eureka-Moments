@@ -92,7 +92,7 @@ export default {
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 .home {
-  background-color: #fdc741;
+  background-color: var(--primary-color);
   height: 100vh;
   display: flex;
   justify-content: space-between;

@@ -85,7 +85,9 @@ export default {
       .onSnapshot((data) => {
         this.start = data.data().start;
         if (data.data().start && localStorage.getItem("qNum")) {
-          this.$router.push(`qPage/${localStorage.getItem("qNum")}`);
+          this.$store.state.question = Number(localStorage.getItem("qNum").split('.')[0])
+          this.$store.state.state = Number(localStorage.getItem("qNum").split('.')[1])
+          this.$router.push(`qPage`);
         }
       });
   },
@@ -116,7 +118,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  background-color: #fdc741;
+  background-color: var(--primary-color);
 
   .fancy-heading {
     font-family: "Amatic SC", cursive;

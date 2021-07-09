@@ -1,7 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import store from "../store";
 
 Vue.use(VueRouter);
 
@@ -18,7 +17,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   {
-    path: "/qPage/:state",
+    path: "/qPage",
     name: "q-page",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/qPage.vue"),
@@ -32,10 +31,11 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, __, next) => {
-  if (to.name === "Home") return next();
-  if (store.state.user.displayName) {
+  if (localStorage.getItem("logged")) {
+    if (to.name === "Home") return router.push("/about");
     return next();
   }
+  if (to.name === "Home") return next();
   return router.push({ name: "Home" });
 });
 
