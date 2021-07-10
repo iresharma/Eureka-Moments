@@ -64,9 +64,7 @@ export default {
     justify-content: center;
     align-items: center;
 
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 600;
-    font-size: 2em;
+    font: var(--content-font);
   }
 
   .ant-btn {

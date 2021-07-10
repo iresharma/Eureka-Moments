@@ -90,7 +90,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap");
 .main {
   padding: 5rem;
 
@@ -103,9 +102,7 @@ export default {
       justify-content: center;
       align-items: center;
 
-      font-family: "Ubuntu", sans-serif;
-      font-weight: 600;
-      font-size: 2em;
+      font: var(--content-font);
     }
   }
 

@@ -29,6 +29,8 @@ export default new Vuex.Store({
     },
     INCREMENT_QUES: (state) => {
       state.question++;
+      state.state = 1;
+      localStorage.setItem("qNum", `${state.question}.${state.state}`);
       localStorage.setItem("qNum", `${state.question}.${state.state}`);
     },
     INCREMENT_SCORE: (state) => {

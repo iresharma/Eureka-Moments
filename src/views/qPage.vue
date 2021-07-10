@@ -31,11 +31,15 @@
 import slide1_1 from "./Slides/slide1-1.vue";
 import slide1_2 from "./Slides/slide1-2.vue";
 import slide1_3 from "./Slides/slide1-3.vue";
+import slide1_4 from "./Slides/slide2-1.vue";
+import slide1_5 from "./Slides/slide2-2.vue";
 export default {
   components: {
     slide1_1,
     slide1_2,
     slide1_3,
+    slide1_4,
+    slide1_5,
   },
   computed: {
     user() {
@@ -63,6 +67,11 @@ export default {
           title: "General Riddles",
           subtitle: "To get the mind motors running",
           slides: [slide1_1, slide1_2, slide1_3],
+        },
+        {
+          title: "General Riddles",
+          subtitle: "To get the mind motors running",
+          slides: [slide1_4, slide1_5],
         },
       ],
     };
