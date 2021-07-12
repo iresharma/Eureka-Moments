@@ -104,7 +104,7 @@ export default {
     },
     move() {
       localStorage.setItem("qNum", 1.1);
-      this.$router.push("qPage/1.1");
+      this.$router.push("qPage");
     },
   },
 };

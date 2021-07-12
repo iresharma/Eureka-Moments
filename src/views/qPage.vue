@@ -31,15 +31,20 @@
 import slide1_1 from "./Slides/slide1-1.vue";
 import slide1_2 from "./Slides/slide1-2.vue";
 import slide1_3 from "./Slides/slide1-3.vue";
-import slide1_4 from "./Slides/slide2-1.vue";
-import slide1_5 from "./Slides/slide2-2.vue";
+import slide2_1 from "./Slides/slide2-1.vue";
+import slide2_2 from "./Slides/slide2-2.vue";
+import slide7_1 from "./Slides/slide7-1.vue";
+import slide3_1 from "./Slides/slide3-1.vue";
+import blank from "./Slides/blank.vue";
 export default {
   components: {
     slide1_1,
     slide1_2,
     slide1_3,
-    slide1_4,
-    slide1_5,
+    slide2_1,
+    slide2_2,
+    slide3_1,
+    blank,
   },
   computed: {
     user() {
@@ -71,7 +76,44 @@ export default {
         {
           title: "General Riddles",
           subtitle: "To get the mind motors running",
-          slides: [slide1_4, slide1_5],
+          slides: [slide2_1, slide2_2],
+        },
+        {
+          title: "General Riddles",
+          subtitle: "To get the mind motors running",
+          slides: [slide3_1],
+        },
+        // Aptitude ques================================================
+        {
+          title: "Aptitude",
+          subtitle: "FAANG be watching",
+          slides: [blank],
+        },
+        {
+          title: "Aptitude",
+          subtitle: "FAANG be watching",
+          slides: [blank],
+        },
+        {
+          title: "Aptitude",
+          subtitle: "FAANG be watching",
+          slides: [blank],
+        },
+        // Numberical ques================================================
+        {
+          title: "Numerical",
+          subtitle: "Unleash your inner Mathematician",
+          slides: [slide7_1],
+        },
+        {
+          title: "Numerical",
+          subtitle: "Unleash your inner Mathematician",
+          slides: [blank],
+        },
+        {
+          title: "Numerical",
+          subtitle: "Unleash your inner Mathematician",
+          slides: [blank],
         },
       ],
     };
