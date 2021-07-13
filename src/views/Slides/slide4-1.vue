@@ -1,39 +1,25 @@
 <template>
   <div class="main">
     <div class="hor">
-      <img src="@/assets/images/q3_1.png" alt="" />
+      <img src="@/assets/images/q4_1.jpeg" alt="" />
       <div>
-        <code>
-          ‘A @ B’ means ‘A is not smaller than B’<br />
-          ‘A # B’ means ‘A is neither smaller than nor equal to B’ <br />
-          ‘A % B’ means ‘A is neither smaller than nor greater than B’ <br />
-          ‘A $ B’ means ‘A is not greater than B’ <br />
-          ‘A * B’ means ‘A is neither greater than nor equal to B’ <br />
-
-          <b>
-            "Given the following set of true statements and conculsions Select
-            an option"
-          </b>
-          <br />
-          // Statements C#D, A@B, D*E, B%C <br />
-          // Conclusions (1) A@C (2) C#E <br />
-        </code>
+        <p>
+          Pradyoth, Adeep, and Elon are outside discussing theology. One of them
+          is a saint who always tells the truth, one of them is a devil who
+          always lies, and one of them is a human who can either tell the truth
+          or tell a lie.
+        </p>
+        <p>
+          Pradyoth says: <i>"I am a human."</i> <br />
+          Adeep says: <i>"Pradyoth is a devil."</i> <br />
+          Elon says: <i>"Adeep is a saint."</i> <br /><br /><br />
+          <strong>Who is the human?</strong> <br />
+        </p>
         <div class="options">
           <a-radio-group v-model="value">
-            <a-radio :style="radioStyle" :value="1">
-              Only conclusion 1 is true
-            </a-radio>
-            <a-radio :style="radioStyle" :value="2">
-              Only conclusion 2 is true</a-radio
-            >
-          </a-radio-group>
-          <a-radio-group v-model="value">
-            <a-radio :style="radioStyle" :value="3">
-              Either conclusion 1 or 2 is true</a-radio
-            >
-            <a-radio :style="radioStyle" :value="4">
-              Neither conclusion 1 nor 2 is true</a-radio
-            >
+            <a-radio :style="radioStyle" :value="1"> Pradyoth </a-radio>
+            <a-radio :style="radioStyle" :value="2"> Adeep</a-radio>
+            <a-radio :style="radioStyle" :value="3"> Elon</a-radio>
           </a-radio-group>
         </div>
       </div>
@@ -59,7 +45,7 @@ export default {
   methods: {
     check() {
       if (this.value !== null) {
-        if (this.value === 1) this.$store.commit("INCREMENT_SCORE");
+        if (this.value === 3) this.$store.commit("INCREMENT_SCORE");
         this.$store.commit("INCREMENT_STATE");
       } else this.showConfirm();
     },
@@ -92,13 +78,17 @@ export default {
 
     img {
       // height: 100%;
-      width: 50%;
+      width: 40%;
     }
 
     div {
+      padding: 1.5rem;
+      font-family: v-sans;
+      font-weight: bold;
+      font-size: 1.3em;
+
       .options {
         width: 50%;
-        margin-top: 3rem;
 
         display: flex;
         justify-content: space-between;
@@ -106,7 +96,7 @@ export default {
         .ant-radio-group.ant-radio-group-outline.ant-radio-group-default {
           label {
             font-family: v-mono;
-            font-size: 1.2em;
+            font-size: 1.3rem;
             font-weight: bold;
           }
         }

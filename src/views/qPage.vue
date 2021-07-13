@@ -33,8 +33,11 @@ import slide1_2 from "./Slides/slide1-2.vue";
 import slide1_3 from "./Slides/slide1-3.vue";
 import slide2_1 from "./Slides/slide2-1.vue";
 import slide2_2 from "./Slides/slide2-2.vue";
-import slide7_1 from "./Slides/slide7-1.vue";
 import slide3_1 from "./Slides/slide3-1.vue";
+import slide3_2 from "./Slides/slide3-2.vue";
+import slide4_1 from "./Slides/slide4-1.vue";
+import slide4_2 from "./Slides/slide4-2.vue";
+import slide5_1 from "./Slides/slide5-1.vue";
 import blank from "./Slides/blank.vue";
 export default {
   components: {
@@ -44,6 +47,10 @@ export default {
     slide2_1,
     slide2_2,
     slide3_1,
+    slide3_2,
+    slide4_1,
+    slide4_2,
+    slide5_1,
     blank,
   },
   computed: {
@@ -73,37 +80,27 @@ export default {
           subtitle: "To get the mind motors running",
           slides: [slide1_1, slide1_2, slide1_3],
         },
-        {
-          title: "General Riddles",
-          subtitle: "To get the mind motors running",
-          slides: [slide2_1, slide2_2],
-        },
-        {
-          title: "General Riddles",
-          subtitle: "To get the mind motors running",
-          slides: [slide3_1],
-        },
         // Aptitude ques================================================
         {
           title: "Aptitude",
           subtitle: "FAANG be watching",
-          slides: [blank],
+          slides: [slide2_1, slide2_2],
         },
         {
           title: "Aptitude",
           subtitle: "FAANG be watching",
-          slides: [blank],
+          slides: [slide3_1, slide3_2],
         },
         {
           title: "Aptitude",
           subtitle: "FAANG be watching",
-          slides: [blank],
+          slides: [slide4_1, slide4_2],
         },
         // Numberical ques================================================
         {
           title: "Numerical",
           subtitle: "Unleash your inner Mathematician",
-          slides: [slide7_1],
+          slides: [slide5_1],
         },
         {
           title: "Numerical",

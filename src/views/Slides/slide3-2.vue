@@ -1,0 +1,57 @@
+<template>
+  <main>
+    <div class="content">
+      <lottie-animation
+        path="assets/JSON/yaas.json"
+        :loop="false"
+        :delay="2"
+        :autoPlay="true"
+        :speed="1"
+        height="300"
+      />
+      <div class="text">
+        Explanation: A&gt;=B=C&gt;D&lt;E <br />
+        Here (1) A@C is inferred <br />
+        But (2) C#Ecannot be inferred. <br />
+      </div>
+    </div>
+    <a-button
+      size="large"
+      icon="right"
+      shape="round"
+      @click="$store.commit('INCREMENT_QUES')"
+      >Next</a-button
+    >
+  </main>
+</template>
+
+<script>
+import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
+export default {
+  components: {
+    LottieAnimation,
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+main {
+  padding: 5rem;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font: var(--content-font);
+    text-align: center;
+  }
+
+  .ant-btn {
+    position: absolute;
+    right: 5rem;
+    margin-top: 2rem;
+  }
+}
+</style>

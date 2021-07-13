@@ -1,7 +1,5 @@
 <template>
   <div class="main">
-    <div class="grid">
-        
-    </div>
+    <div class="grid">hi</div>
   </div>
 </template>
