@@ -122,8 +122,8 @@ export default {
 
   .fancy-heading {
     font-family: "Amatic SC", cursive;
-    font-size: 5em;
-    margin-bottom: 0.5em;
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
     text-align: center;
   }
 
@@ -139,8 +139,8 @@ export default {
 
       ul {
         li {
-          font-size: 24px;
-          font-family: v-mono;
+          font-size: 1.3rem;
+          font-family: monospace;
         }
       }
     }

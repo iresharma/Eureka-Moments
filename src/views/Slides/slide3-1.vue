@@ -105,8 +105,8 @@ export default {
 
         .ant-radio-group.ant-radio-group-outline.ant-radio-group-default {
           label {
-            font-family: v-mono;
-            font-size: 1.2em;
+            font-family: monospace;
+            font-size: 1rem;
             font-weight: bold;
           }
         }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <a-page-header
-      style="border: 1px solid rgb(235, 237, 240)"
+      style="border: 1px solid rgb(235, 237, 240); z-index: 999999"
       :title="title"
       :sub-title="subtitle"
     >
@@ -38,6 +38,7 @@ import slide3_2 from "./Slides/slide3-2.vue";
 import slide4_1 from "./Slides/slide4-1.vue";
 import slide4_2 from "./Slides/slide4-2.vue";
 import slide5_1 from "./Slides/slide5-1.vue";
+import slide5_2 from "./Slides/slide5-2.vue";
 import blank from "./Slides/blank.vue";
 export default {
   components: {
@@ -51,6 +52,7 @@ export default {
     slide4_1,
     slide4_2,
     slide5_1,
+    slide5_2,
     blank,
   },
   computed: {
@@ -100,7 +102,7 @@ export default {
         {
           title: "Numerical",
           subtitle: "Unleash your inner Mathematician",
-          slides: [slide5_1],
+          slides: [slide5_1, slide5_2],
         },
         {
           title: "Numerical",
