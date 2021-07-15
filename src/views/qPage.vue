@@ -39,6 +39,7 @@ import slide4_1 from "./Slides/slide4-1.vue";
 import slide4_2 from "./Slides/slide4-2.vue";
 import slide5_1 from "./Slides/slide5-1.vue";
 import slide5_2 from "./Slides/slide5-2.vue";
+import slide6_1 from "./Slides/slide6-1.vue";
 import blank from "./Slides/blank.vue";
 export default {
   components: {
@@ -53,6 +54,7 @@ export default {
     slide4_2,
     slide5_1,
     slide5_2,
+    slide6_1,
     blank,
   },
   computed: {
@@ -107,7 +109,7 @@ export default {
         {
           title: "Numerical",
           subtitle: "Unleash your inner Mathematician",
-          slides: [blank],
+          slides: [slide6_1],
         },
         {
           title: "Numerical",

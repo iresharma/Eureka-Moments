@@ -88,7 +88,7 @@ export default {
       if (this.KK == 3 && this.DM == 2 && this.DC == 4) {
         this.$store.commit("INCREMENT_SCORE");
       }
-      this.$store.commit("INCREMENT_STATE")
+      this.$store.commit("INCREMENT_STATE");
     },
   },
 };
