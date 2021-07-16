@@ -11,6 +11,7 @@
         </div>
         <div class="options">
             <a-radio-group v-model="value">
+              <!-- shit, make this checkbox to as it is multi correct -->
           <a-radio :style="radioStyle" :value="1"><image src="@/assets/images/q9_2A.jpeg" alt="A" /></a-radio>
           <a-radio :style="radioStyle" :value="2"><image src="@/assets/images/q9_2B.jpeg" alt="B" /></a-radio>
           <a-radio :style="radioStyle" :value="3"><image src="@/assets/images/q9_2C.jpeg" alt="C" /></a-radio>
