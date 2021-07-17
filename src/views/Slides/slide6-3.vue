@@ -2,24 +2,23 @@
   <main>
     <div class="content">
       <lottie-animation
-        path="assets/JSON/num1.json"
-        :loop="true"
+        path="assets/JSON/bulb.json"
+        :loop="false"
         :delay="2"
         :autoPlay="true"
         :speed="1"
         height="300"
       />
       <div class="text">
-        In Mathematics, Parity is the property of an integer. An integer parity
-        is even if it is divisible by 2 with no remainders left and its parity
-        is odd if it isn't; that is the remainder is 1.
+        ANS: (b) Blue Bubble <br />
+        Explanation: You need to get Even Parity
       </div>
     </div>
     <a-button
       size="large"
       icon="right"
       shape="round"
-      @click="$store.commit('INCREMENT_STATE')"
+      @click="$store.commit('INCREMENT_QUES')"
       >Next</a-button
     >
   </main>

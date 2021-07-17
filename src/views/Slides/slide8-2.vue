@@ -1,51 +1,41 @@
 <template>
-  <div class="main">
-    <div class="hor">
-      <div class="content">
-        <strong>Question:</strong><br />
-        <p>
-          Write a hexadecimal equivalent to display ‘IEEE’ using 4 7-segment
-          displays.
-        </p>
+  <main>
+    <div class="content">
+      <img src="@/assets/7seg.gif" alt="">
+      <div class="text">
+        Just following the index of the string and putting alternate + and -
+        signs for the index and then finding the letter for the integer obtained
+        on labeling the index of the string
       </div>
-      <!-- add a text area for writing the answer -->
     </div>
-    <a-button size="large" icon="right" shape="round" @click="check"
+    <a-button
+      size="large"
+      icon="right"
+      shape="round"
+      @click="$store.commit('INCREMENT_QUES')"
       >Next</a-button
     >
-  </div>
+  </main>
 </template>
 
-<script>
-export default {
-  setup() {
-    return {
-      value: null,
-      radioStyle: {
-        display: "block",
-        height: "30px",
-        lineHeight: "30px",
-      },
-    };
-  },
-  methods: {
-    check() {
-      if (this.value !== null) {
-        if (this.value == 1) this.$store.commit("INCREMENT_SCORE");
-        this.$store.commit("INCREMENT_STATE");
-      } else this.showConfirm();
-    },
-    showConfirm() {
-      let self = this;
-      this.$confirm({
-        title: "Do you want to move without solving?",
-        content: "Once clicked you can not come back to this question",
-        onOk() {
-          self.$store.commit("INCREMENT_STATE");
-        },
-        onCancel() {},
-      });
-    },
-  },
-};
-</script>
+<style lang="scss" scoped>
+main {
+  padding: 5rem;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font: var(--content-font);
+    text-align: center;
+  }
+
+  .ant-btn {
+    position: absolute;
+    right: 5rem;
+    margin-top: 2rem;
+  }
+}
+</style>

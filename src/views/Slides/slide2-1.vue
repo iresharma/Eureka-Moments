@@ -91,7 +91,7 @@ export default {
   .ant-btn {
     position: absolute;
     right: 5rem;
-    bottom: 10rem;
+    bottom: 5%;
   }
 }
 </style>

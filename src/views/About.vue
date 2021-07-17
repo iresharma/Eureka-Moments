@@ -122,8 +122,8 @@ export default {
 
   .fancy-heading {
     font-family: "Amatic SC", cursive;
-    font-size: 5rem;
-    margin-bottom: 0.5rem;
+    font-size: 5em;
+    margin-bottom: 20px;
     text-align: center;
   }
 

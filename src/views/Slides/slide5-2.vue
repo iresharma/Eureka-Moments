@@ -109,7 +109,7 @@ main {
 
   .ant-btn {
     position: absolute;
-    bottom: 4rem;
+    bottom: 4%;
     right: 4rem;
   }
 }

@@ -40,10 +40,12 @@ import slide4_2 from "./Slides/slide4-2.vue";
 import slide5_1 from "./Slides/slide5-1.vue";
 import slide5_2 from "./Slides/slide5-2.vue";
 import slide6_1 from "./Slides/slide6-1.vue";
-import slide7_1 from "./Slides/slide7-1.vue";
-import slide7_2 from "./Slides/slide7-2.vue";
+import slide6_2 from "./Slides/slide6-2.vue";
+import slide6_3 from "./Slides/slide6-3.vue";
 import slide8_1 from "./Slides/slide8-1.vue";
 import slide8_2 from "./Slides/slide8-2.vue";
+import slide9_1 from "./Slides/slide9-1.vue";
+import slide9_2 from "./Slides/slide9-2.vue";
 import blank from "./Slides/blank.vue";
 export default {
   components: {
@@ -59,10 +61,12 @@ export default {
     slide5_1,
     slide5_2,
     slide6_1,
-    slide7_1,
-    slide7_2,
+    slide6_2,
+    slide6_3,
     slide8_1,
     slide8_2,
+    slide9_1,
+    slide9_2,
     blank,
   },
   computed: {
@@ -117,12 +121,18 @@ export default {
         {
           title: "Numerical",
           subtitle: "Unleash your inner Mathematician",
-          slides: [slide6_1],
+          slides: [slide6_1, slide6_2, slide6_3],
+        },
+        // Hardware ques================================================
+        {
+          title: "Hardware",
+          subtitle: "Beep Boop Beep Boop",
+          slides: [slide8_1, slide8_2],
         },
         {
-          title: "Numerical",
-          subtitle: "Unleash your inner Mathematician",
-          slides: [slide7_1, slide7_2],
+          title: "Hardware",
+          subtitle: "Beep Boop Beep Boop",
+          slides: [slide9_1, slide9_2],
         },
       ],
     };
