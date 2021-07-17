@@ -23,28 +23,28 @@
       <h3 class="fancy-heading">Instructions</h3>
       <div class="grid">
         <div class="instructions">
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-              Molestias, nesciunt.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-              Molestias, nesciunt.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-              Molestias, nesciunt.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-              Molestias, nesciunt.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-              Molestias, nesciunt.
-            </li>
-          </ul>
+          Welcome to <b>EUREKA MOMENTS </b> <br />
+          A place for fun and learning. We intend to bring to you some concepts
+          and ideas that are relevant and requisite to your routine as an IEEE
+          member or rather, an ardent individual. <br />
+          You will be facing a set of 3 walls at every level. <br />
+          The first wall builds the basic idea and projects your task. <br />
+          The second wall builds up as a question based on what you just
+          understood. <br />
+          Try not to jump this wall. The third, reveals to you the applicable
+          materials and gives you the "Eureka moment" as you embrace epiphany.
+          <br />
+          This will follow for various levels of the event. Be mindful, for once
+          a wall is broken it cannot be undone. <br />
+          Do not try to jump the wall, for not the first but the best answers
+          win. However, it is not mandatory that you answer all the questions
+          and you are still a winner if you've learnt something new today!
+          <br />
+          Your moments of learning with fun begins as you choose to start. Also,
+          do not worry about saving the references ,we will provide you with all
+          of them at the end of the event. Have fun BUZZING and exclaiming
+          EUREKA! after solving.
+
           <a-button :loading="!start" type="primary" icon="fire" @click="move">
             Start
           </a-button>
@@ -85,8 +85,12 @@ export default {
       .onSnapshot((data) => {
         this.start = data.data().start;
         if (data.data().start && localStorage.getItem("qNum")) {
-          this.$store.state.question = Number(localStorage.getItem("qNum").split('.')[0])
-          this.$store.state.state = Number(localStorage.getItem("qNum").split('.')[1])
+          this.$store.state.question = Number(
+            localStorage.getItem("qNum").split(".")[0]
+          );
+          this.$store.state.state = Number(
+            localStorage.getItem("qNum").split(".")[1]
+          );
           this.$router.push(`qPage`);
         }
       });
@@ -137,12 +141,10 @@ export default {
       align-items: center;
       flex-direction: column;
 
-      ul {
-        li {
-          font-size: 1.3rem;
-          font-family: monospace;
-        }
-      }
+      font-size: 1.3rem;
+      font-family: monospace;
+
+      padding: 2rem;
     }
   }
 }

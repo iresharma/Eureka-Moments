@@ -53,6 +53,23 @@ import slide11_1 from "./Slides/slide11-1.vue";
 import slide11_2 from "./Slides/slide11-2.vue";
 import slide11_3 from "./Slides/slide11-3.vue";
 import slide12_1 from "./Slides/slide12-1.vue";
+import slide12_2 from "./Slides/slide12-2.vue";
+import slide12_3 from "./Slides/slide12-3.vue";
+import slide13_1 from "./Slides/slide13-1.vue";
+import slide13_2 from "./Slides/slide13-2.vue";
+import slide13_3 from "./Slides/slide13-3.vue";
+import slide14_1 from "./Slides/slide14-1.vue";
+import slide14_2 from "./Slides/slide14-2.vue";
+import slide14_3 from "./Slides/slide14-3.vue";
+import slide15_1 from "./Slides/slide15-1.vue";
+import slide15_2 from "./Slides/slide15-2.vue";
+import slide15_3 from "./Slides/slide15-3.vue";
+import slide16_1 from "./Slides/slide16-1.vue";
+import slide16_2 from "./Slides/slide16-2.vue";
+import slide16_3 from "./Slides/slide16-3.vue";
+import slide17_1 from "./Slides/slide17-1.vue";
+import slide17_2 from "./Slides/slide17-2.vue";
+import Done from "./Slides/Done.vue";
 import blank from "./Slides/blank.vue";
 export default {
   components: {
@@ -81,6 +98,23 @@ export default {
     slide11_2,
     slide11_3,
     slide12_1,
+    slide12_2,
+    slide12_3,
+    slide13_1,
+    slide13_2,
+    slide13_3,
+    slide14_1,
+    slide14_2,
+    slide14_3,
+    slide15_1,
+    slide15_2,
+    slide15_3,
+    slide16_1,
+    slide16_2,
+    slide16_3,
+    slide17_1,
+    slide17_2,
+    Done,
     blank,
   },
   computed: {
@@ -161,7 +195,37 @@ export default {
         {
           title: "Hardware",
           subtitle: "Beep Boop Beep Boop",
-          slides: [slide12_1, slide11_3],
+          slides: [slide12_1, slide12_2, slide12_3],
+        },
+        {
+          title: "Software",
+          subtitle: "1010111....ello Wrold!",
+          slides: [slide13_1, slide13_2, slide13_3],
+        },
+        {
+          title: "Software",
+          subtitle: "1010111....ello World!",
+          slides: [slide14_1, slide14_2, slide14_3],
+        },
+        {
+          title: "Software",
+          subtitle: "1010111....ello World!",
+          slides: [slide15_1, slide15_2, slide15_3],
+        },
+        {
+          title: "Software",
+          subtitle: "1010111....ello World!",
+          slides: [slide16_1, slide16_2, slide16_3],
+        },
+        {
+          title: "Software",
+          subtitle: "1010111....ello World!",
+          slides: [slide17_1, slide17_2],
+        },
+        {
+          title: "Completed",
+          subtitle: "Woohoo we did it Jope you had fun",
+          slides: [Done],
         },
       ],
     };

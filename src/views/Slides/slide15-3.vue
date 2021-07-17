@@ -1,15 +1,15 @@
 <template>
   <div class="main">
-    <div class="content">What language is the given code written in?</div>
-    <img src="@/assets/images/carbon-4.png" alt="" />
+    <div class="content">What does this BF code do?</div>
+    <img src="@/assets/images/carbon-6.png" alt="" />
     <div class="options">
       <a-radio-group v-model="value">
-        <a-radio :style="radioStyle" :value="1"> NASM </a-radio>
-        <a-radio :style="radioStyle" :value="2"> perl</a-radio>
+        <a-radio :style="radioStyle" :value="1"> power of 2 </a-radio>
+        <a-radio :style="radioStyle" :value="2"> multiplication</a-radio>
       </a-radio-group>
       <a-radio-group v-model="value">
-        <a-radio :style="radioStyle" :value="3"> ook!</a-radio>
-        <a-radio :style="radioStyle" :value="4"> BF</a-radio>
+        <a-radio :style="radioStyle" :value="3"> division</a-radio>
+        <a-radio :style="radioStyle" :value="4"> modulo</a-radio>
       </a-radio-group>
     </div>
     <a-button size="large" icon="right" shape="round" @click="check"
@@ -33,8 +33,8 @@ export default {
   methods: {
     check() {
       if (this.value !== null) {
-        if (this.value === 4) this.$store.commit("INCREMENT_SCORE");
-        this.$store.commit("INCREMENT_STATE");
+        if (this.value === 2) this.$store.commit("INCREMENT_SCORE");
+        this.$store.commit("INCREMENT_QUES");
       } else this.showConfirm();
     },
     showConfirm() {

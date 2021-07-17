@@ -81,8 +81,12 @@ export default {
         displayName: user.displayName ?? user.email,
         photoURL: user.photoURL,
       };
+      FirebaseApp.db
+        .collection("users")
+        .doc(user.uid)
+        .set({ ...appUser, score: 0 });
       localStorage.setItem("logged", true);
-      this.$store.commit("SET_USER", appUser);
+      this.$store.commit("SET_USER", { ...appUser, score: 0 });
       this.$router.push("/about");
     },
   },
