@@ -104,7 +104,7 @@
       size="large"
       icon="right"
       shape="round"
-      @click="$store.commit('INCREMENT_STATE')"
+      @click="$store.commit('INCREMENT_QUES')"
       >Next</a-button
     >
   </main>
@@ -156,6 +156,7 @@ main {
   .ant-btn {
     position: absolute;
     right: 5rem;
+    margin-top: 2rem;
   }
 }
 </style>
