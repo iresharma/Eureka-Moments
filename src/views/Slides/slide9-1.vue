@@ -1,14 +1,10 @@
 <template>
   <div class="main">
     <div class="content">
-      <p>
-        <strong>We know that in Logic Gates</strong>
-      </p>
-      <div class="options">
-        Y= A + B => OR Gate<br />
-        Y= A . B => AND Gate<br />
-        Y=A’ => NOT Gate<br />
-        <image src="@/assets/images/q9_1.jpeg" alt="" />
+      <img src="@/assets/images/9-1.png" alt="" />
+      <div>
+        <h1>Here are the representation of these gates</h1>
+        <img src="@/assets/images/9-1-2.png" alt="" class="dia" />
       </div>
     </div>
     <a-button
@@ -24,5 +20,25 @@
 <style lang="scss" scoped>
 .main {
   padding: 5rem;
+
+  .content {
+    display: flex;
+    align-items: center;
+    img {
+      width: 50%;
+    }
+
+    div {
+      .dia {
+        width: 100%;
+      }
+    }
+  }
+
+  .ant-btn {
+    position: absolute;
+    right: 5rem;
+    bottom: 5%;
+  }
 }
 </style>

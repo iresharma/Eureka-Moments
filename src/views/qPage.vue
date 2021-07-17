@@ -46,6 +46,8 @@ import slide8_1 from "./Slides/slide8-1.vue";
 import slide8_2 from "./Slides/slide8-2.vue";
 import slide9_1 from "./Slides/slide9-1.vue";
 import slide9_2 from "./Slides/slide9-2.vue";
+import slide9_3 from "./Slides/slide9-3.vue";
+import slide10_1 from "./Slides/slide10-1.vue";
 import blank from "./Slides/blank.vue";
 export default {
   components: {
@@ -67,6 +69,8 @@ export default {
     slide8_2,
     slide9_1,
     slide9_2,
+    slide9_3,
+    slide10_1,
     blank,
   },
   computed: {
@@ -132,7 +136,12 @@ export default {
         {
           title: "Hardware",
           subtitle: "Beep Boop Beep Boop",
-          slides: [slide9_1, slide9_2],
+          slides: [slide9_1, slide9_2, slide9_3],
+        },
+        {
+          title: "Hardware",
+          subtitle: "Beep Boop Beep Boop",
+          slides: [slide10_1],
         },
       ],
     };

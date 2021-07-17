@@ -46,10 +46,13 @@ export default {
         this.i !== "" &&
         this.e !== ""
       ) {
-        if (this.i.toLowerCase() === "0x60" && this.e.toLowerCase() === "0x6e") {
+        if (
+          this.i.toLowerCase() === "0x60" &&
+          this.e.toLowerCase() === "0x6e"
+        ) {
           this.$store.commit("INCREMENT_SCORE");
-          this.$store.commit("INCREMENT_STATE");
         }
+        this.$store.commit("INCREMENT_STATE");
       } else this.showConfirm();
     },
     showConfirm() {
