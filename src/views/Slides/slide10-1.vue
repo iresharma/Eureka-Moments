@@ -51,7 +51,7 @@
       size="large"
       icon="right"
       shape="round"
-      @click="$store.commit('INCREMENT_STATE')"
+      @click="$store.commit('INCREMENT_QUES')"
       >Next</a-button
     >
   </main>
