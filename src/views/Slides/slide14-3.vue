@@ -4,7 +4,7 @@
       <img src="@/assets/images/idk.jpg" alt="" />
       <div class="text">
         Ans: The minimum time slots required are 3 as shown in the diagram
-        below.
+        above.
       </div>
     </div>
     <a-button

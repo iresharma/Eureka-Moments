@@ -6,8 +6,9 @@
         n digits(called bit length). For instance: a 2-bit or 3-bit counter
         (depending on the bit length).A counter counts the transition from low
         to high or 0 to 1 and not 1 to 0 <br /><br />
-        An n bit counter can count up to 2n (i.e 0 – (2<sup>n</sup>-1)) and then
-        starts again from 0 at the next count. <br />
+        An n bit counter can count up to 2<sup>n</sup> (i.e 0 –
+        (2<sup>n</sup>-1)) and then starts again from 0 at the next count.
+        <br />
         But some counters called fixed count counters are set to reset once they
         reach a specified combination. Eg: a Decade counter counts up to 10,
         then a 4- bit counter is set to reset when the bit configuration is 1010

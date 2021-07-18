@@ -22,8 +22,7 @@
           1 respectively, so that at the end only 1 blue bubble is left and to
           do so we add 1 blue bubble to make its parity opposite from the other
           two colors from the beginning. So after all the fusions only one
-          single blue bubble remained which answers our question. To get to know
-          more watch this video,
+          single blue bubble remained which answers our question. 
         </p>
       </div>
     </div>

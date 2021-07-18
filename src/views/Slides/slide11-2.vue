@@ -19,7 +19,7 @@
               0 to 2<sup>n</sup>
             </a-radio>
             <a-radio :style="radioStyle" :value="2">
-              0 to 2<sup>n-1</sup></a-radio
+              0 to 2<sup>n</sup>-1</a-radio
             >
           </a-radio-group>
           <a-radio-group v-model="value">
