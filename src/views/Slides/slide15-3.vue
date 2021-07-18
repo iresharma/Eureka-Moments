@@ -43,7 +43,7 @@ export default {
         title: "Do you want to move without solving?",
         content: "Once clicked you can not come back to this question",
         onOk() {
-          self.$store.commit("INCREMENT_STATE");
+          self.$store.commit("INCREMENT_QUES");
         },
         onCancel() {},
       });
