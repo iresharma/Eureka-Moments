@@ -1,11 +1,14 @@
 <template>
-  <main>
+  <main class="ans">
     <div class="content">
-      <img src="@/assets/7seg.gif" alt="">
+      <img src="@/assets/7seg.gif" alt="" />
       <div class="text">
-        Just following the index of the string and putting alternate + and -
-        signs for the index and then finding the letter for the integer obtained
-        on labeling the index of the string
+        I = 0110 0000 : E = 1001 1110 <br />
+        Converting to hexadecimal I = 0x60 ; E = 0x9E <br />
+
+        Note: If you solve for E, I can be obtained by complimenting all the
+        segments except segment h. <br />
+        We encourage you to learn more about seven-segment displays. <br />
       </div>
     </div>
     <a-button
@@ -21,8 +24,13 @@
 <style lang="scss" scoped>
 main {
   padding: 5rem;
+  
 
   .content {
+    img {
+      height: 30vh;
+    }
+
     display: flex;
     justify-content: center;
     align-items: center;

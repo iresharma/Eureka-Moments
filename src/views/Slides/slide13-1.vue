@@ -1,7 +1,6 @@
 <template>
   <div class="main">
     <div class="grid">
-      <h1>A turing complete system</h1>
       <div class="content">
         A Turing complete system is a system that can perform any computation.
         <br />
@@ -53,7 +52,7 @@
 
 <style lang="scss" scoped>
 .main {
-  margin: 5rem;
+  padding: 5rem;
 
   .grid {
     .content {

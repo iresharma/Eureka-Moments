@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="ans">
     <div class="content">
       <lottie-animation
         path="assets/JSON/bulb.json"
@@ -10,9 +10,12 @@
         height="300"
       />
       <div class="text">
-        Just following the index of the string and putting alternate + and -
-        signs for the index and then finding the letter for the integer obtained
-        on labeling the index of the string
+        Ans: IOQSEWI
+        <br />
+        The 1st worker gets 1 gold coin since as 3 Rotis piled up and divided
+        into 3 pieces makes (3*3=)9 pieces among which only 1 piece was given to
+        the hungry man while he had the 8 pieces for himself. 2nd worker gets 7
+        coins in the same logic 5*3=15, 15-8 =7.
       </div>
     </div>
     <a-button

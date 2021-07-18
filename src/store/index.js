@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import FirebaseApp from "../firebaseConfig";
 
 Vue.use(Vuex);
 
@@ -22,6 +23,12 @@ export default new Vuex.Store({
     INCREMENT_STATE: (state) => {
       state.state++;
       localStorage.setItem("qNum", `${state.question}.${state.state}`);
+      FirebaseApp.db
+        .collection("users")
+        .doc(JSON.parse(localStorage.getItem("user")).uid)
+        .update({
+          score: state.user.score,
+        });
     },
     DECREMENT_STATE: (state) => {
       state.state--;

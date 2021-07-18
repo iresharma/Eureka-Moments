@@ -9,7 +9,11 @@
         :speed="1"
         height="300"
       />
-      <img src="@/assets/images/ans12.png" alt="">
+      <img src="@/assets/images/ans12.png" alt="" />
+      x indicates the instance a page fault has occurred. <br />
+      The page that has freshly been loaded into a frame and thus caused a page
+      fault is indicated in green. <br />
+      Thus total number of page faults = number of x = 10.
     </div>
     <a-button
       size="large"
@@ -34,7 +38,10 @@ export default {
 main {
   padding: 5rem;
 
+  background: rgb(187, 218, 187);
+
   .content {
+    font: var(--content-font);
     img {
       width: 100%;
     }

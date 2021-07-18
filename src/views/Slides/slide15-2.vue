@@ -19,3 +19,9 @@
     >
   </div>
 </template>
+
+<style lang="scss" scoped>
+.main {
+  padding: 5rem;
+}
+</style>

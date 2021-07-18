@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="ans">
     <div class="content">
       <lottie-animation
         path="assets/JSON/bulb.json"
@@ -48,6 +48,8 @@ export default {
 <style lang="scss" scoped>
 main {
   padding: 5rem;
+
+  
 
   .content {
     display: flex;

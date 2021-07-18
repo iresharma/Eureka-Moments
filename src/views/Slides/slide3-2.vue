@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="ans">
     <div class="content">
       <lottie-animation
         path="assets/JSON/yaas.json"
@@ -10,9 +10,14 @@
         height="300"
       />
       <div class="text">
-        Explanation: A&gt;=B=C&gt;D&lt;E <br />
-        Here (1) A@C is inferred <br />
-        But (2) C#Ecannot be inferred. <br />
+        Ans : (A) <br /><br />
+
+        Explanation: <br />
+        The logical expression which can be derived is A&gt;=B=C&gt;D&lt;E
+        <br />
+        so, (1) A@C can be inferred <br />
+        But (2) C#E cannot be inferred. <br />
+        So option (A) is correct <br />
       </div>
     </div>
     <a-button
@@ -37,7 +42,6 @@ export default {
 <style lang="scss" scoped>
 main {
   padding: 5rem;
-
   .content {
     display: flex;
     justify-content: center;

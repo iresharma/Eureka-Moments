@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="ans">
     <div>
       <lottie-animation
         path="assets/JSON/bulb.json"
@@ -11,13 +11,15 @@
       />
     </div>
     <div class="flex">
-      <a-table
-        style="width: 40%"
-        :data-source="data"
-        :columns="columns"
-        :pagination="false"
-      />
+      <div class="table">
+        <a-table
+          :data-source="data"
+          :columns="columns"
+          :pagination="false"
+        />
+      </div>
       <div class="content">
+        This can be deduced into the following possibilities <br />
         Here 3,2,4 is the suitable answer as it satisfies all the conditions.
         <br />
         So Jack has 3 kit-kat, 2 Dark chocolate, and 4 Dairy Milk.
@@ -97,6 +99,11 @@ main {
     display: flex;
     justify-content: space-evenly;
     width: 70%;
+
+    .table {
+      background: #fff;
+      width: 40%;
+    }
     .highlight {
       background-color: rgb(255, 192, 105);
       padding: 0px;

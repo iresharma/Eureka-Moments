@@ -13,11 +13,9 @@
       </p>
     </div>
     <div class="options">
-      <div class="row">
+      <div class="grid">
         <img @click="imgClick(1)" src="@/assets/images/q9_2A.png" alt="A" />
         <img @click="imgClick(2)" src="@/assets/images/q9_2B.png" alt="B" />
-      </div>
-      <div class="row">
         <img @click="imgClick(3)" src="@/assets/images/q9_2C.png" alt="C" />
         <img @click="imgClick(4)" src="@/assets/images/q9_2D.png" alt="D" />
       </div>
@@ -75,9 +73,9 @@ export default {
     font: var(--content-font);
   }
 
-  .row {
-    display: flex;
-    justify-content: space-around;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     img:hover {
       border: solid 2px black;

@@ -61,6 +61,8 @@ export default {
   justify-content: center;
   align-items: center;
 
+  
+
   .content {
     font: var(--content-font);
   }

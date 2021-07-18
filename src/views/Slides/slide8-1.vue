@@ -102,6 +102,7 @@ export default {
 
         input:focus {
           border: 0.213rem solid blue;
+          border-radius: 3rem;
         }
 
         input:placeholder {

@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main ans">
     <div class="hor">
       <lottie-animation
         path="assets/JSON/bulb.json"
@@ -13,12 +13,12 @@
         Answer: d) 0 to 2<sup>3n</sup> -1 <br />
         If you cascade m n-bit counters the count range gets multiplied m times.
         Hence if you cascade 3 n -bit counters, you get a maximum count of
-        2n*2n*2n = 23n A range of 23n means you can count from 0 to 23n-1 We
-        would encourage you guys to explore this: This method is used to make a
-        counter board that displays in decimal, By cascading a decade counter to
-        display every decimal digit. This way each counter added to the left
-        multiplies the count range by 10.
-        <br /><br />
+        2<sup>n</sup>*2<sup>n</sup>*2<sup>n</sup> = 2<sup>3n</sup> A range of
+        23n means you can count from 0 to 2<sup>3n</sup>-1 We would encourage
+        you guys to explore this: This method is used to make a counter board
+        that displays in decimal, By cascading a decade counter to display every
+        decimal digit. This way each counter added to the left multiplies the
+        count range by 10. <br /><br />
         <a-table :data-source="data" :columns="columns" :pagination="false" />
       </div>
     </div>
@@ -83,7 +83,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem;
+  padding: 5rem;
 
   .hor {
     display: grid;

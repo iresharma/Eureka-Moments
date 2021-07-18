@@ -30,9 +30,9 @@
           You will be facing a set of 3 walls at every level. <br />
           The first wall builds the basic idea and projects your task. <br />
           The second wall builds up as a question based on what you just
-          understood. <br />
-          Try not to jump this wall. The third, reveals to you the applicable
-          materials and gives you the "Eureka moment" as you embrace epiphany.
+          understood. Try not to jump this wall. <br />
+          The third, reveals to you the applicable materials and gives you the
+          "Eureka moment" as you embrace epiphany.
           <br />
           This will follow for various levels of the event. Be mindful, for once
           a wall is broken it cannot be undone. <br />
@@ -141,7 +141,7 @@ export default {
       align-items: center;
       flex-direction: column;
 
-      font-size: 1.3rem;
+      font-size: 1em;
       font-family: monospace;
 
       padding: 2rem;

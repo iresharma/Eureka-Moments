@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="ans">
     <div class="content">
       <lottie-animation
         path="assets/JSON/bulb.json"
@@ -10,9 +10,10 @@
         height="300"
       />
       <div class="text">
-        The correct answer is Mathematicis <br />
-        this can be solved by rearranging the &sum; n formula and solving the
-        quadratic for n and the floor of the positive value of n.
+        The correct answer is Mathematics <br />
+        this can be solved by rearranging the &sum; n { &sum; n = n(n+1)/2 }
+        formula and solving the quadratic for n and the floor of the positive
+        value of n.
       </div>
     </div>
     <a-button
@@ -37,6 +38,8 @@ export default {
 <style lang="scss" scoped>
 main {
   padding: 5rem;
+
+  
 
   .content {
     display: flex;

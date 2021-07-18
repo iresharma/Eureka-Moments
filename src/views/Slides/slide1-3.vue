@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="ans">
     <div class="content">
       <lottie-animation
         path="assets/JSON/bulb.json"
@@ -10,6 +10,8 @@
         height="300"
       />
       <div class="text">
+        ANS: 1,7
+        <br />
         everyone got 8 pieces of rotis. 1st worker gets 1 gold coin since (3
         Rotis piled up and divided into 3 pieces makes 3*3=9 pieces among which
         only 1 piece was given to the hungry man while he had the 8 pieces for
@@ -38,6 +40,8 @@ export default {
 <style lang="scss" scoped>
 main {
   padding: 5rem;
+
+  
 
   .content {
     display: flex;

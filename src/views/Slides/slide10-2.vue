@@ -125,6 +125,7 @@ export default {
 main {
   text-align: center;
   padding: 5rem;
+
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

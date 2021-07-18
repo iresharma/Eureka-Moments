@@ -224,7 +224,7 @@ export default {
         },
         {
           title: "Completed",
-          subtitle: "Woohoo we did it Jope you had fun",
+          subtitle: "Woohoo we did it hope you had fun",
           slides: [Done],
         },
       ],

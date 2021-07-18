@@ -31,6 +31,8 @@ export default {
 main {
   padding: 5rem;
 
+  
+
   .content {
     display: flex;
     justify-content: center;

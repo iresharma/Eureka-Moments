@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class=" ans">
     <div class="content">
       <lottie-animation
         path="assets/JSON/bulb.json"
@@ -10,12 +10,13 @@
         height="300"
       />
       <div class="text">
-        If Adeep was the saint, then this would mean that Adeep is also the
-        saint which is a contradiction. <br />
-        If Pradyoth was the saint, then Pradyoth is a human, which is a
+        Explanation: <br /><br />
+        If Pradyoth was the saint, then “Pradyoth is a human”, is a
         contradiction. <br />
+        If Elon was the saint, then it would mean Adeep is also a saint which is
+        a contradiction. <br />
         Thus, Adeep is the saint. This means that Pradyoth is a devil, and hence
-        Elon is human. <br />
+        Elon is the human. <br />
       </div>
     </div>
     <a-button
@@ -40,7 +41,6 @@ export default {
 <style lang="scss" scoped>
 main {
   padding: 5rem;
-
   .content {
     display: flex;
     justify-content: center;

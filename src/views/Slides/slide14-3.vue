@@ -1,12 +1,10 @@
 <template>
-  <main>
+  <main class="ans">
     <div class="content">
       <img src="@/assets/images/idk.jpg" alt="" />
       <div class="text">
-        everyone got 8 pieces of rotis. 1st worker gets 1 gold coin since (3
-        Rotis piled up and divided into 3 pieces makes 3*3=9 pieces among which
-        only 1 piece was given to the hungry man while he had the 8 pieces for
-        himself. 2nd worker gets 7 coins in the same logic 5*3=15, 15-8 =7.
+        Ans: The minimum time slots required are 3 as shown in the diagram
+        below.
       </div>
     </div>
     <a-button
@@ -22,6 +20,7 @@
 <style lang="scss" scoped>
 main {
   padding: 5rem;
+  
 
   img {
     height: 40vh;
