@@ -80,6 +80,7 @@ export default {
         email: user.email,
         displayName: user.displayName ?? user.email,
         photoURL: user.photoURL,
+        uid: user.uid,
       };
       FirebaseApp.db
         .collection("users")
