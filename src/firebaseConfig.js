@@ -1,13 +1,14 @@
 import firebase from "firebase";
 import "firebase/firestore";
 
-let firebaseConfig = {
-  apiKey: "AIzaSyBvOIkVscYuoV5jcluMm7nYgCB9eXbyIow",
-  authDomain: "eureka-moments.firebaseapp.com",
-  projectId: "eureka-moments",
-  storageBucket: "eureka-moments.appspot.com",
-  messagingSenderId: "1016469408586",
-  appId: "1:1016469408586:web:733f5cbda6a609b3648fb3",
+const firebaseConfig = {
+	apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+	authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
+	databaseURL: process.env.VUE_APP_FIREBASE_DATABASE_URL,
+	projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
+	storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
+	appId: process.env.VUE_APP_FIREBASE_APP_ID
 };
 
 firebase.initializeApp(firebaseConfig);
